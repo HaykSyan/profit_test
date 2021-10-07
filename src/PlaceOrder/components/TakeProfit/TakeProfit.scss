@@ -1,0 +1,97 @@
+.take-profit {
+    &__section {
+        padding: 15px 10px;
+    }
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+        color: #FFF;
+    }
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 25px;
+
+        div:last-child {
+            font-size: 15px;
+            text-transform: uppercase
+        }
+
+        span {
+            color: #FFF;
+        }
+    }
+    &__help-icon {
+        color: rgba(218, 218, 218, 0.2);
+        background-size: auto;
+        padding: 0;
+        margin-left: 4px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 15px;
+        border-bottom: 1px solid #393644;
+
+        label {
+            left: -11px;
+            top: -26px;
+            white-space: nowrap;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 0.25px;
+        }
+
+        .filled-input__input-wrapper {
+            background-color: transparent;
+        }
+    }
+
+    &__add-row {
+        margin-block-start: 20px;
+        margin-block-end: 30px;
+        color: #0078FF;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .MuiButtonBase-root {
+            transition: .5s ease;
+        }
+        &:hover {
+            .MuiButtonBase-root {
+                color: inherit;
+                background-color: rgba(0, 0, 0, 0.04);
+                transform: rotate(360deg);
+            }
+        }
+    }
+    &__remove-icon {
+        .MuiSvgIcon-root {
+            transition: .5s ease;
+            color: rgba(218, 218, 218, 0.2);
+        }
+        &:hover {
+            .MuiSvgIcon-root {
+                color: #f44336;
+                background-color: rgba(0, 0, 0, 0.04);
+                transform: rotate(360deg);
+            }
+        }
+    }
+    &__add-icon {
+        padding: 0;
+        background-color: #0078FF;
+        margin-right: 6px;
+    }
+}
